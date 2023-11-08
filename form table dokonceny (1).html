@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dotazník</title>
+    <style>
+        .levydiv{
+            margin-right: 100px;
+            float: left;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <h1>TV dotazník</h1>
+    <form action="" method="post">
+        <div class = "levydiv">
+            <label for="jmeno">Jméno a příjmení</label>
+        </div>
+        <div>
+            <input type="text" name="jmeno" id="jmeno">
+        </div>
+        
+        <div>
+            <p>Kolik vám je let?</p>
+            <input type="radio" name="vek" id="vek-18" value="18">
+            <label for="vek-18">18 a méně</label><br>
+            <input type="radio" name="vek" id="vek-19" value="19">
+            <label for="vek-19">19 až 64</label><br>
+            <input type="radio" name="vek" id="vek-65" value="65">
+            <label for="vek-65">65 a více</label><br>
+        </div>
+        
+        <div>
+            <p>V jakých zařízení sledujete ČT?</p>
+            <input type="checkbox" name="tv[]" id="tv-televize" value="Televize">
+            <label for="tv-televize">Televize</label><br>
+            <input type="checkbox" name="tv[]" id="tv-pocitac" value="Počítač">
+            <label for="tv-pocitac">Počítač</label><br>
+            <input type="checkbox" name="tv[]" id="tv-mobil" value="Mobil">
+            <label for="tv-mobil">Mobil</label><br>
+        </div>
+        
+        <div class = "levydiv">
+            <label for="libi">Co se vám líbí na TV?</label><br>
+            
+        </div>
+        <div>
+            <textarea name="libi" id="libi" rows="4" cols="50"></textarea>
+        <div>
+        
+        <div class = "levydiv">
+            <label for="poplatky">Jakou výši poplatků jste ochotni platit</label><br>
+            
+        </div>
+
+        <div>
+            
+            <select name="poplatky" id="poplatky">
+                <option value="0-100">0 - 100 Kč</option>
+                <option value="100-200">101 - 200 Kč</option>
+                <option value="200-300">201 - 300 Kč</option>
+                <option value="300-400">301 - 400 Kč</option>
+                <option value="400+">Více než 400 Kč</option>
+            </select>
+        </div>
+
+        
+        <div>
+            <input type="submit" value="Odeslat">
+        </div>
+    </form>
+</body>
+</html>
